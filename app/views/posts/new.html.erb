@@ -14,7 +14,7 @@
 
   <br/>
   <%= f.label :category_name %>
-   <%= f.collection_select :category, Category.all, :category_name, :name %>
+   <%= f.collection_select :category, Category.all, :name, :name, name: "category_name" %>
   <div class="actions">
     <%= f.submit %>
   </div>
