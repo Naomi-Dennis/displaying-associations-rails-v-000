@@ -14,7 +14,7 @@
 
   <br/>
   <span>Categories:</span>
-  <%= f.collection_select :category, Category.all, :category_name, :id %>
+  <%= f.collection_select :category, Category.all, :category_name, :name %>
   <div class="actions">
     <%= f.submit %>
   </div>
