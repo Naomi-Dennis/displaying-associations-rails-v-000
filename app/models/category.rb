@@ -6,3 +6,4 @@ class Category < ActiveRecord::Base
     self.posts << post
   end
 end
+end
