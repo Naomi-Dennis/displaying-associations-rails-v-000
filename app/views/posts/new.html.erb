@@ -15,7 +15,8 @@
     <%= f.label :category_id, 'Post Category:' %><br>
     <%= f.collection_radio_buttons :category_id, @categories, :id, :name %>
   </div>
-
+  <%= f.label :category_id, :category %><%= f.text_field :category_id %>
+  <%= f.text_field :content %>
   <div class="actions">
     <%= f.submit %>
   </div>
