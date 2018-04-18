@@ -11,13 +11,10 @@
     <%= f.text_area :description %>
   </div>
 
-  <div class="field">
-    <%= f.label :category_id, 'Post Category:' %><br>
-    <%= f.collection_radio_buttons :category_id, @categories, :id, :name %>
-  </div>
+
   <br/>
-  <%= f.label :category_id, :category %><%= f.text_field :category_id %>
-  <%= f.text_field :description %>
+  <%= f.collection_select :category, Category.all, :id, :name %>
+<%= f.text_field :content %>
   <div class="actions">
     <%= f.submit %>
   </div>
