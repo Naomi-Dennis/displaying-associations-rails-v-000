@@ -14,15 +14,7 @@
 
   <br/>
   <span>Categories:</span>
-  <%= form_for @post do |f| %>
-  <%= f.text_field :category_name, list: "categories_autocomplete" %>
-  <datalist id="categories_autocomplete">
-    <% Category.all.each do |category| %>
-      <option value="<%= category.name %>">
-    <% end %>
-  </datalist>
-  <textarea name="post[content]"></textarea>
-<% end %>
+  <%= f.collection_select :category_name, Category.all, :id, :category_name %>
   <div class="actions">
     <%= f.submit %>
   </div>
