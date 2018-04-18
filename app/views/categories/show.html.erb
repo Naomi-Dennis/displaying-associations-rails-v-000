@@ -3,6 +3,8 @@
 <!-- Add code here to list a category's posts. -->
 <ul>
 <% @category.posts.each do | post | %>
-<li>  <%= link_to post.title, post_path(post) %> </li>
+<input name="category[post_ids][]">
+<input name="category[post_ids][]">
+<input name="category[post_ids][]">
 <% end %>
 </ul>
