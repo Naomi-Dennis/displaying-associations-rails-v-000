@@ -9,4 +9,10 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
+  <%= form_for @category do |f| %>
+  <input name="category[post_ids][]">
+  <input name="category[post_ids][]">
+  <input name="category[post_ids][]">
+<% end %>
 <% end %>
